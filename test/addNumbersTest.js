@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const addNumbers = require("../practiceQuestions/addNumbers.js/index.js");
+const addNumbers = require("../practiceQuestions/addNumbers.js");
 
 describe("addNumbers", () => {
   it("returns 11", () => {

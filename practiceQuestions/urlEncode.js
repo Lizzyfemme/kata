@@ -1,19 +1,19 @@
+// Create a function that takes a string of words and turn it into a percent-encoded string by replacing all whitespace with %20
+
 const urlEncode = function(input) {
   let text = input.trim();
   let whiteSpace = " ";
   let newString = "";
-  let encoded = "20%";
- 
+  let encoded = "%20";
+
   for (let i = 0; i < text.length; i++) {
     if (text[i] === whiteSpace) {
       newString += encoded;
-    }
-    else {
+    } else {
       newString += text[i];
     }
   }
   return newString;
 };
-console.log(urlEncode("Lighthouse Labs"));
-console.log(urlEncode(" Lighthouse Labs "));
-console.log(urlEncode("blue is greener than purple for sure"));
+
+module.exports = urlEncode;

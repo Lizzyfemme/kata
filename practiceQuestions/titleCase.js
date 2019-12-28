@@ -1,3 +1,5 @@
+//Create a function called titleCase that takes a string and capitalizes the first letter of every word.
+
 function titleCase(str) {
   if (str === "") {
     return "";

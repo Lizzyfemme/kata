@@ -1,3 +1,12 @@
+## addNumbers
+
+const sumLargestNumbers = function(data) {
+let total = 0;
+for (var i = 0; i < data.length; i++) {
+total += Number(data[i]);
+}
+return total;
+
 ## conditionalSum
 
 const conditionalSum = function(values, condition) {
@@ -30,11 +39,35 @@ sum++;
 return sum;
 };
 
-## sumLargestNumbers
+## titleCase
 
-const sumLargestNumbers = function(data) {
-let total = 0;
-for (var i = 0; i < data.length; i++) {
-total += Number(data[i]);
+function titleCase(str) {
+if (str === "") {
+return "";
+} else {
+str = str.toLowerCase();
+str = str.split(" ");
+for (var i = 0; i < str.length; i++) {
+str[i] = str[i][0].toUpperCase() + str[i].substr(1);
 }
-return total;
+return str.join(" ");
+}
+}
+
+## urlEncode
+
+const urlEncode = function(input) {
+let text = input.trim();
+let whiteSpace = " ";
+let newString = "";
+let encoded = "%20";
+
+for (let i = 0; i < text.length; i++) {
+if (text[i] === whiteSpace) {
+newString += encoded;
+} else {
+newString += text[i];
+}
+}
+return newString;
+};
