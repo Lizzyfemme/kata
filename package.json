@@ -1,0 +1,23 @@
+{
+  "name": "kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "%20.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lizzyfemme/kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lizzyfemme/kata/issues"
+  },
+  "homepage": "https://github.com/Lizzyfemme/kata#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
