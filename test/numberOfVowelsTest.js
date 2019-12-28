@@ -10,11 +10,11 @@ describe("#numberOfVowels", () => {
     assert.equal(5, numberOfVowels("aeiou"));
   });
 
-  it("returns What Happens Here", () => {
+  it("confirms results are a number", () => {
     assert.isNumber(5, numberOfVowels("aeiou"));
   });
 
-  it("returns I R Cool", () => {
+  it("should not return 9", () => {
     assert.notEqual(9, numberOfVowels("this is an example"));
   });
 });
