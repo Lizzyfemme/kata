@@ -1,7 +1,7 @@
 const assert = require("chai").assert;
 const conditionalSum = require("../practiceQuestions/conditionalSum");
 
-describe("divides numbers in an array into odd or even and adds all the numbers of a type", () => {
+describe("#conditionalSum", () => {
   it("returns 6", () => {
     assert.equal(6, conditionalSum([1, 2, 3, 4, 5], "even"));
   });

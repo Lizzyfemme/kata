@@ -21,6 +21,22 @@ sum += values[i];
 return sum;
 };
 
+## instructorWithLongestName
+
+const instructorWithLongestName = function(instructors) {
+let longest = "";
+let index;
+let object;
+for (let i = 0; i < instructors.length; i++) {
+let nameLength = instructors[i].name;
+if (longest.length < nameLength.length) {
+longest = nameLength;
+index = longest.indexOf(longest[i]);
+object = instructors[index];
+}
+} return object;
+}
+
 ## numberOfVowels
 
 const numberOfVowels = function(data) {

@@ -1,7 +1,7 @@
 const assert = require("chai").assert;
 const addNumbers = require("../practiceQuestions/addNumbers.js");
 
-describe("addNumbers", () => {
+describe("#addNumbers", () => {
   it("returns 11", () => {
     assert.equal(11, addNumbers([1, 10]));
   });
