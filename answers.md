@@ -7,6 +7,21 @@ total += Number(data[i]);
 }
 return total;
 
+## camelCase
+
+const camelCase = function(input) {
+let output = "";
+for (x = 0; x <= input.length; x++) {
+if (input.charAt(x) === " ") {
+output += input.charAt(x + 1).toUpperCase();
+x++;
+} else {
+output += input.charAt(x);
+}
+}
+return output;
+};
+
 ## conditionalSum
 
 const conditionalSum = function(values, condition) {
@@ -53,6 +68,21 @@ sum++;
 }
 }
 return sum;
+};
+
+## repeatNumbers
+
+let repeatNumbers = function(data) {
+let string = "";
+for (let row = 0; row < data.length; row++) {
+for (let col = 1; col <= data[row][1]; col++) {
+string += data[row][0];
+}
+if (row < data.length - 1) {
+string += ", ";
+}
+}
+return string;
 };
 
 ## titleCase
