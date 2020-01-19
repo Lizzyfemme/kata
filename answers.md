@@ -52,6 +52,20 @@ object = instructors[index];
 } return object;
 }
 
+## lunch
+
+const lunch = function(hungry, availableTime) {
+if (hungry === true && availableTime < 20) {
+return "Pick something up and eat at the Lab or in the kitchen, where you can get to know your fellow classmates.";
+} else if (hungry === true && availableTime <= 30) {
+return "You deserve a break. Try a place in Gastown.";
+} else if (hungry === true && availableTime > 30) {
+return "This is a bootcamp, you should probably reconsider.";
+} else {
+return "Keep coding";
+}
+};
+
 ## numberOfVowels
 
 const numberOfVowels = function(data) {
