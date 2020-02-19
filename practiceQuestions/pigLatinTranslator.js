@@ -1,3 +1,8 @@
+// Create a function that follows these rules:
+// the consonant of a word before the first vowel should appear at the end of the word and "ay" should be added to the end of the word.
+// If the word starts with "qu", "qu" should be moved to the back of the word and "ay should be added".
+// If a word begins with a vowel, only "ay" should be added to the end of the word.
+
 const VOWELS = ["a", "e", "i", "o", "u"];
 
 function pigLatinTranslator(message) {
@@ -15,3 +20,7 @@ function translateWord(word) {
   return word.slice(i) + word.slice(0, i) + "ay";
 }
 module.exports = pigLatinTranslator;
+
+console.log(pigLatinTranslator("The queue is too long, I quit"));
+console.log(pigLatinTranslator("translation"));
+console.log(pigLatinTranslator("appearence"));
