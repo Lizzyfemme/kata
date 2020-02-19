@@ -1,4 +1,5 @@
-// FUNCTION IMPLEMENTATION (BUGGY)
+// Create a function called palindrome, that outputs true if a string passed to it is a palindrome or false otherwise.
+
 const palindrome = function(str) {
   const noSpaces = str
     .toLowerCase()
