@@ -21,6 +21,4 @@ function translateWord(word) {
 }
 module.exports = pigLatinTranslator;
 
-console.log(pigLatinTranslator("The queue is too long, I quit"));
-console.log(pigLatinTranslator("translation"));
-console.log(pigLatinTranslator("appearence"));
+

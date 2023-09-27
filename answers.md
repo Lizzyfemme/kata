@@ -1,12 +1,13 @@
 ## addNumbers
 
 ```js
-const sumLargestNumbers = function(data) {
-let total = 0;
-for (var i = 0; i < data.length; i++) {
-total += Number(data[i]);
+const addNumbers = function(data) {
+let result = 0;
+ for (let num of data) {
+result += num
 }
-return total;
+return result
+}
 ```
 
 ## camelCase
