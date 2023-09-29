@@ -9,7 +9,30 @@ result += num
 return result
 }
 ```
+## anagrams 
 
+```js
+function anagram(first, second) {
+    if (first.length !== second.length) {
+      return false;
+    }
+    const lookup = {};
+    for (let i = 0; i < first.length; i++) {
+      let letter = first[i];
+      lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
+    }
+    for (let i = 0; i < second.length; i++) {
+      let letter = second[i];
+      if (!lookup[letter]) {
+        return false;
+      } else {
+        lookup[letter] -= 1;
+      }
+    }
+  
+    return true;
+  }
+```
 ## camelCase
 
 ```js
@@ -182,6 +205,23 @@ function titleCase(str) {
     }
     return str.join(" ");
   }
+}
+```
+
+## uniqueValues
+
+```js
+
+function uniqueValues(arr){
+    if(arr.length === 0) return 0;
+    var i = 0;
+    for(var j = 1; j < arr.length; j++){
+        if(arr[i] !== arr[j]){
+            i++;
+            arr[i] = arr[j]
+        }
+    }
+    return i + 1;
 }
 ```
 
